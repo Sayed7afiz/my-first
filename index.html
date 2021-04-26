@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+        <div class="container py-5">
+            <div class="form-group">
+                <label for="productNameInput">productName:</label>
+                <input class="form-control" id="productNameInput">
+            </div>
+            <div class="form-group">
+                <label for="productPriceInput">productPrice:</label>
+                <input class="form-control" id="productPriceInput">
+            </div>
+            <div class="form-group">
+                <label for="productNCategoryInput">productCategory:</label>
+                <input class="form-control" id="productNCategoryInput">
+            </div>
+            <div class="form-group">
+                <label for="productDescInput">productDescription:</label>
+                <input class="form-control" id="productDescInput">
+            </div>
+    
+            <button onclick="addProduct();" class="btn btn-outline-info">Add Product</button>
+        </div>
+        <div class="container ">
+            <table class="table w-75 m-auto">
+                <thead>
+                    <th>Index</th>
+                    <th>productName</th>
+                    <th>productPrice</th>
+                    <th>productCategory</th>
+                    <th>productDescription</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    
+    <script src="main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
